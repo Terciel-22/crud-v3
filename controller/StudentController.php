@@ -55,7 +55,7 @@
                 if(count($errors) == 0)
                 {
                     $this->model->storeStudent($first_name, $last_name, $age);
-                    header("Location: /facebook/");
+                    header("Location: /crud-v3/");
                 } else 
                 {
                     $this->view->renderCreateForm($errors);
@@ -105,7 +105,7 @@
                 if(count($errors) == 0)
                 {
                     $this->model->updateStudent($id, $first_name, $last_name, $age);
-                    header("Location: /facebook/");
+                    header("Location: /crud-v3/");
                 } else 
                 {
                     $id = $_GET["id"];
@@ -118,7 +118,7 @@
         function delete($id)
         {
             $student = $this->model->deleteStudent($id);
-            header("Location: /facebook/");
+            header("Location: /crud-v3/");
         }
 
         private function sanitizeInput($data)

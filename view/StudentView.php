@@ -8,7 +8,7 @@
             {
                 echo "<p>Name: $student->first_name $student->last_name</p>";
                 echo "<p>Age: $student->age</p>";
-                echo "<a href='/facebook/edit.php?id=$student->id'>Edit</a>";
+                echo "<a href='/crud-v3/edit.php?id=$student->id'>Edit</a>";
                 echo "  <a href='?delete_id=$student->id' onclick='return confirm(`Do you want to delete this?`)'>Delete</a>";
                 echo "<hr/>";
             }
